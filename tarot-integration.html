@@ -1,0 +1,237 @@
+<!--
+  TAROTXD - Integración de Funcionalidades
+
+  Incluye este archivo en tus páginas HTML para activar las funcionalidades de tarot.
+
+  Uso:
+  1. Copia este contenido al final del <body> de tus páginas HTML
+  2. O incluye directamente los archivos CSS y JS
+
+  Ejemplo:
+  <link rel="stylesheet" href="/tarot-styles.css">
+  <script src="/tarot-functionality.js"></script>
+-->
+
+<!-- Estilos de Tarot -->
+<link rel="stylesheet" href="/tarot-styles.css">
+
+<!-- Script de Funcionalidad de Tarot -->
+<script src="/tarot-functionality.js"></script>
+
+<!-- Contenedores de Resultados (agregar según la página) -->
+
+<!-- Para tarot-reading.html -->
+<div id="tarot-reading-result" style="display:none;"></div>
+
+<!-- Para yes-or-no-tarot.html -->
+<div id="yes-no-result" style="display:none;"></div>
+
+<!-- Para love-tarot.html -->
+<div id="love-reading-result" style="display:none;"></div>
+
+<!-- Para fortune/daily.html -->
+<div id="daily-fortune-result" style="display:none;"></div>
+
+<!-- Para draw-cards.html -->
+<div id="drawn-cards-result" style="display:none;"></div>
+
+<!-- Script de Inicialización Adicional -->
+<script>
+// Configuración adicional si es necesaria
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('🎴 TAROTXD - Sistema de funcionalidades cargado');
+
+  // Agregar atributos data-action a botones existentes si no los tienen
+  const initializeButtons = () => {
+    // Botones de lectura de tarot
+    const tarotButtons = document.querySelectorAll('button[type="submit"]:not([data-action])');
+    tarotButtons.forEach(button => {
+      const page = window.location.pathname;
+
+      if (page.includes('tarot-reading')) {
+        button.setAttribute('data-action', 'start-tarot-reading');
+        button.addEventListener('click', (e) => {
+          e.preventDefault();
+          const question = document.querySelector('input[type="text"], textarea')?.value || '';
+          window.TarotSystem.performTarotReading(question);
+
+          // Mostrar contenedor de resultados
+          const container = document.getElementById('tarot-reading-result');
+          if (container) {
+            container.style.display = 'block';
+            container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        });
+      }
+
+      if (page.includes('yes-or-no-tarot')) {
+        button.setAttribute('data-action', 'yes-no-tarot');
+        button.addEventListener('click', (e) => {
+          e.preventDefault();
+          const question = document.querySelector('input[type="text"], textarea')?.value || '';
+          window.TarotSystem.performYesNoReading(question);
+
+          const container = document.getElementById('yes-no-result');
+          if (container) {
+            container.style.display = 'block';
+            container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        });
+      }
+
+      if (page.includes('love-tarot')) {
+        button.setAttribute('data-action', 'love-tarot');
+        button.addEventListener('click', (e) => {
+          e.preventDefault();
+          const inputs = document.querySelectorAll('input[type="text"]');
+          const names = {
+            person1: inputs[0]?.value || 'You',
+            person2: inputs[1]?.value || 'Them'
+          };
+          window.TarotSystem.performLoveReading(names);
+
+          const container = document.getElementById('love-reading-result');
+          if (container) {
+            container.style.display = 'block';
+            container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        });
+      }
+
+      if (page.includes('fortune/daily')) {
+        button.setAttribute('data-action', 'daily-fortune');
+      }
+
+      if (page.includes('draw-cards')) {
+        button.setAttribute('data-action', 'draw-cards');
+        button.setAttribute('data-count', '3');
+      }
+    });
+
+    console.log('✅ Botones inicializados con data-actions');
+  };
+
+  // Ejecutar inicialización de botones
+  setTimeout(initializeButtons, 500);
+
+  // Agregar atajos de teclado
+  document.addEventListener('keydown', (e) => {
+    // Ctrl/Cmd + Shift + T = Nueva lectura de tarot
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'T') {
+      e.preventDefault();
+      window.TarotSystem.performTarotReading();
+    }
+
+    // Ctrl/Cmd + Shift + F = Fortuna del día
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'F') {
+      e.preventDefault();
+      window.TarotSystem.getDailyFortune();
+    }
+
+    // Ctrl/Cmd + Shift + H = Ver historial
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'H') {
+      e.preventDefault();
+      console.log('📚 Historial de lecturas:', window.TarotSystem.getHistory());
+      window.TarotSystem.showNotification('📚 Check console for reading history', 'info');
+    }
+  });
+
+  // Agregar comando de consola útil
+  console.log('%c🎴 TAROTXD Comandos Disponibles 🎴', 'color: #667eea; font-size: 16px; font-weight: bold;');
+  console.log('%cEn la consola, puedes usar:', 'color: #764ba2; font-size: 14px;');
+  console.log('%cTarotSystem.performTarotReading()', 'color: #555; font-family: monospace;');
+  console.log('%cTarotSystem.performYesNoReading("pregunta")', 'color: #555; font-family: monospace;');
+  console.log('%cTarotSystem.performLoveReading({person1: "Nombre1", person2: "Nombre2"})', 'color: #555; font-family: monospace;');
+  console.log('%cTarotSystem.getDailyFortune()', 'color: #555; font-family: monospace;');
+  console.log('%cTarotSystem.drawCards(3)', 'color: #555; font-family: monospace;');
+  console.log('%cTarotSystem.getHistory()', 'color: #555; font-family: monospace;');
+  console.log('%cTarotSystem.clearHistory()', 'color: #555; font-family: monospace;');
+  console.log(' ');
+  console.log('%cAtajos de teclado:', 'color: #764ba2; font-size: 14px;');
+  console.log('%cCtrl/Cmd + Shift + T: Nueva lectura', 'color: #555; font-family: monospace;');
+  console.log('%cCtrl/Cmd + Shift + F: Fortuna del día', 'color: #555; font-family: monospace;');
+  console.log('%cCtrl/Cmd + Shift + H: Ver historial', 'color: #555; font-family: monospace;');
+});
+
+// Manejar visibilidad de página (pausar/reanudar animaciones)
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) {
+    console.log('👁️ Página oculta - pausando animaciones');
+  } else {
+    console.log('👁️ Página visible - reanudando');
+  }
+});
+
+// Prevenir pérdida de datos en formularios
+window.addEventListener('beforeunload', (e) => {
+  const forms = document.querySelectorAll('form');
+  let hasUnsavedData = false;
+
+  forms.forEach(form => {
+    const formData = new FormData(form);
+    for (let [key, value] of formData.entries()) {
+      if (value && value.toString().trim().length > 0) {
+        hasUnsavedData = true;
+        break;
+      }
+    }
+  });
+
+  if (hasUnsavedData) {
+    e.preventDefault();
+    e.returnValue = 'You have unsaved changes. Are you sure you want to leave?';
+    return e.returnValue;
+  }
+});
+</script>
+
+<!-- Estilos adicionales inline para mejor compatibilidad -->
+<style>
+/* Asegurar que los contenedores de resultados sean visibles cuando se muestren */
+#tarot-reading-result,
+#yes-no-result,
+#love-reading-result,
+#daily-fortune-result,
+#drawn-cards-result {
+  min-height: 200px;
+  margin-top: 40px;
+}
+
+/* Mejorar la integración con el diseño existente */
+.tarot-reading-display,
+.yes-no-display,
+.love-reading-display,
+.fortune-display,
+.drawn-cards-display {
+  font-family: inherit;
+}
+
+/* Asegurar que los botones sean clickeables */
+button[data-action],
+[data-action] {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Loading state para botones */
+button[data-action].loading {
+  opacity: 0.7;
+  pointer-events: none;
+  position: relative;
+}
+
+button[data-action].loading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+</style>
