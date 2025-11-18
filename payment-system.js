@@ -9,8 +9,7 @@
 
 const PaymentSystem = {
   // Configuración de PayPal
-  // IMPORTANTE: Reemplaza con tu Client ID real de PayPal
-  paypalClientId: 'YOUR_PAYPAL_CLIENT_ID', // Sandbox: usa tu Sandbox Client ID
+  paypalClientId: 'ATYgo5oZHtYp6IZRno5MNDmOzjlPxeQw3Xu5XNpyAbYLZEL0mBStXxKJPl03oViiBRouuDmIkVs7XAQO',
 
   // Precios
   pricing: {
