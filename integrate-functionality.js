@@ -40,6 +40,8 @@ const pageContainers = {
 const integrationCode = `
     <!-- TAROTXD - Sistema de Funcionalidades -->
     <link rel="stylesheet" href="/tarot-styles.css">
+    <link rel="stylesheet" href="/payment-styles.css">
+    <script src="/payment-system.js"></script>
     <script src="/tarot-functionality.js"></script>
 `;
 

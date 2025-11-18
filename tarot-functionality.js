@@ -41,7 +41,73 @@ const TarotSystem = {
     // Cargar historial del localStorage
     this.loadHistory();
 
+    // Mostrar display de créditos
+    this.showCreditsDisplay();
+
     console.log('✅ Sistema de Tarot inicializado correctamente');
+  },
+
+  // ============================================================================
+  // VERIFICACIÓN DE CRÉDITOS
+  // ============================================================================
+
+  // Verificar créditos antes de hacer una lectura
+  checkCreditsBeforeReading() {
+    // Si el PaymentSystem no está cargado, permitir (modo gratuito)
+    if (!window.PaymentSystem) {
+      return true;
+    }
+
+    // Verificar si puede hacer lectura
+    if (!window.PaymentSystem.canPerformReading()) {
+      // Mostrar modal de pricing
+      window.PaymentSystem.showPricingModal();
+      return false;
+    }
+
+    // Consumir una lectura
+    window.PaymentSystem.consumeReading();
+
+    // Actualizar display de créditos
+    this.updateCreditsDisplay();
+
+    return true;
+  },
+
+  // Mostrar display de créditos
+  showCreditsDisplay() {
+    if (!window.PaymentSystem) return;
+
+    let display = document.getElementById('credits-display');
+    if (!display) {
+      display = document.createElement('div');
+      display.id = 'credits-display';
+      display.className = 'credits-display';
+      display.onclick = () => window.PaymentSystem.showPricingModal();
+      document.body.appendChild(display);
+    }
+
+    this.updateCreditsDisplay();
+  },
+
+  // Actualizar display de créditos
+  updateCreditsDisplay() {
+    const display = document.getElementById('credits-display');
+    if (!display || !window.PaymentSystem) return;
+
+    const remaining = window.PaymentSystem.getRemainingReadings();
+    const isUnlimited = remaining === '∞';
+    const isZero = remaining === 0;
+
+    display.className = 'credits-display';
+    if (isUnlimited) display.className += ' unlimited';
+    if (isZero) display.className += ' zero';
+
+    display.innerHTML = `
+      <span class="credits-icon">🎴</span>
+      <span>Lecturas:</span>
+      <span class="credits-count">${remaining}</span>
+    `;
   },
 
   // Cargar base de datos de cartas
@@ -152,6 +218,12 @@ const TarotSystem = {
   },
 
   performTarotReading(question = '') {
+    // Verificar créditos primero
+    if (!this.checkCreditsBeforeReading()) {
+      console.log('⛔ Lectura cancelada: sin créditos');
+      return null;
+    }
+
     console.log('🔮 Realizando lectura de tarot...');
 
     // Tirada de 3 cartas: Pasado, Presente, Futuro
@@ -195,6 +267,12 @@ const TarotSystem = {
   },
 
   performYesNoReading(question = '') {
+    // Verificar créditos primero
+    if (!this.checkCreditsBeforeReading()) {
+      console.log('⛔ Lectura cancelada: sin créditos');
+      return null;
+    }
+
     console.log('🔮 Realizando lectura Sí/No...');
 
     const card = this.getRandomCard(false); // Solo arcanos mayores
@@ -262,6 +340,12 @@ const TarotSystem = {
   },
 
   performLoveReading(names = { person1: 'You', person2: 'Them' }) {
+    // Verificar créditos primero
+    if (!this.checkCreditsBeforeReading()) {
+      console.log('⛔ Lectura cancelada: sin créditos');
+      return null;
+    }
+
     console.log('💕 Realizando lectura de amor...');
 
     // Tirada de amor de 5 cartas
@@ -384,6 +468,12 @@ const TarotSystem = {
   },
 
   drawCards(count = 1) {
+    // Verificar créditos primero
+    if (!this.checkCreditsBeforeReading()) {
+      console.log('⛔ Lectura cancelada: sin créditos');
+      return null;
+    }
+
     console.log(`🃏 Sacando ${count} carta(s)...`);
 
     const cards = this.getRandomCards(count, true);

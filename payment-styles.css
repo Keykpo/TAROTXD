@@ -1,0 +1,541 @@
+/**
+ * TAROTXD - Estilos para Sistema de Pagos
+ */
+
+/* ============================================================================
+   MODAL DE PRICING
+   ============================================================================ */
+
+.pricing-modal {
+  max-width: 900px !important;
+  width: 95% !important;
+  padding: 40px 30px !important;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 30px 0;
+}
+
+/* ============================================================================
+   TARJETAS DE PRICING
+   ============================================================================ */
+
+.pricing-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 16px;
+  padding: 30px 25px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(102, 126, 234, 0.3);
+  border-color: #667eea;
+}
+
+.pricing-card.featured {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  transform: scale(1.05);
+}
+
+.pricing-card.featured:hover {
+  transform: scale(1.08) translateY(-5px);
+}
+
+.pricing-card h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.pricing-card.featured h3 {
+  color: white;
+}
+
+/* ============================================================================
+   BADGE
+   ============================================================================ */
+
+.pricing-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: #667eea;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+}
+
+.pricing-badge.premium {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  box-shadow: 0 2px 8px rgba(245, 87, 108, 0.4);
+}
+
+/* ============================================================================
+   PRECIO
+   ============================================================================ */
+
+.pricing-price {
+  text-align: center;
+  margin: 25px 0;
+  padding: 20px 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card.featured .pricing-price {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.pricing-price .currency {
+  font-size: 24px;
+  font-weight: bold;
+  vertical-align: top;
+  margin-right: 2px;
+  color: #667eea;
+}
+
+.pricing-card.featured .pricing-price .currency {
+  color: #ffd700;
+}
+
+.pricing-price .amount {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+  line-height: 1;
+}
+
+.pricing-card.featured .pricing-price .amount {
+  color: white;
+}
+
+.pricing-price .period {
+  font-size: 18px;
+  color: #666;
+  margin-left: 5px;
+}
+
+.pricing-card.featured .pricing-price .period {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ============================================================================
+   FEATURES
+   ============================================================================ */
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+}
+
+.pricing-features li {
+  padding: 12px 0;
+  font-size: 15px;
+  color: #555;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.pricing-card.featured .pricing-features li {
+  color: rgba(255, 255, 255, 0.95);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.pricing-features li:last-child {
+  border-bottom: none;
+}
+
+.pricing-features li:hover {
+  padding-left: 8px;
+  color: #667eea;
+}
+
+.pricing-card.featured .pricing-features li:hover {
+  color: #ffd700;
+}
+
+/* ============================================================================
+   PAYPAL BUTTON CONTAINER
+   ============================================================================ */
+
+.paypal-button-container {
+  margin-top: 25px;
+  min-height: 45px;
+}
+
+/* ============================================================================
+   CREDITS DISPLAY
+   ============================================================================ */
+
+.credits-display {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  z-index: 999;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.credits-display:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+}
+
+.credits-display .credits-icon {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.credits-display .credits-count {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+  color: #ffd700;
+}
+
+.credits-display.unlimited {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.credits-display.unlimited .credits-count {
+  color: white;
+}
+
+.credits-display.zero {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+  animation: pulse 2s infinite;
+}
+
+/* ============================================================================
+   PAYWALL OVERLAY
+   ============================================================================ */
+
+.paywall-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  animation: fadeIn 0.3s ease;
+}
+
+.paywall-content {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 500px;
+  text-align: center;
+  animation: slideInUp 0.4s ease;
+}
+
+.paywall-content h2 {
+  color: #667eea;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.paywall-content p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.paywall-content .paywall-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.paywall-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.paywall-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.paywall-button:active {
+  transform: translateY(0);
+}
+
+/* ============================================================================
+   ACCOUNT SUMMARY
+   ============================================================================ */
+
+.account-summary {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 16px;
+  padding: 25px;
+  margin: 20px 0;
+}
+
+.account-summary h3 {
+  color: #667eea;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.account-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.summary-item {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.summary-item .label {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.summary-item .value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.summary-item.unlimited .value {
+  color: #f5576c;
+}
+
+/* ============================================================================
+   PURCHASE HISTORY
+   ============================================================================ */
+
+.purchase-history {
+  margin-top: 30px;
+}
+
+.purchase-history h4 {
+  color: #667eea;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.purchase-item {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.purchase-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.purchase-item .purchase-type {
+  font-weight: bold;
+  color: #667eea;
+}
+
+.purchase-item .purchase-date {
+  font-size: 12px;
+  color: #999;
+}
+
+.purchase-item .purchase-amount {
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+/* ============================================================================
+   RESPONSIVE
+   ============================================================================ */
+
+@media (max-width: 768px) {
+  .pricing-modal {
+    padding: 25px 15px !important;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .pricing-card.featured {
+    transform: scale(1);
+  }
+
+  .pricing-card.featured:hover {
+    transform: translateY(-5px);
+  }
+
+  .credits-display {
+    top: 70px;
+    right: 10px;
+    left: 10px;
+    text-align: center;
+  }
+
+  .paywall-content {
+    margin: 20px;
+    padding: 30px 20px;
+  }
+
+  .pricing-price .amount {
+    font-size: 38px;
+  }
+
+  .account-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================================
+   ANIMATIONS
+   ============================================================================ */
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* ============================================================================
+   LOADING STATE
+   ============================================================================ */
+
+.paypal-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #667eea;
+}
+
+.paypal-loading::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(102, 126, 234, 0.3);
+  border-top-color: #667eea;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* ============================================================================
+   DARK MODE
+   ============================================================================ */
+
+@media (prefers-color-scheme: dark) {
+  .pricing-card:not(.featured) {
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+    color: white;
+  }
+
+  .pricing-card:not(.featured) h3 {
+    color: white;
+  }
+
+  .pricing-card:not(.featured) .pricing-price .amount {
+    color: white;
+  }
+
+  .pricing-card:not(.featured) .pricing-features li {
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .account-summary {
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  }
+
+  .summary-item,
+  .purchase-item {
+    background: #2d3748;
+    color: white;
+  }
+
+  .summary-item .label {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .paywall-content {
+    background: #1a202c;
+    color: white;
+  }
+
+  .paywall-content p {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+/* ============================================================================
+   PRINT
+   ============================================================================ */
+
+@media print {
+  .credits-display,
+  .paywall-overlay,
+  .tarot-modal,
+  .paypal-button-container {
+    display: none !important;
+  }
+}
