@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegación - Clon de Tarotap.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #764ba2;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            font-size: 1.8em;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .page-link {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .page-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+            border-color: #667eea;
+        }
+
+        .page-link h3 {
+            color: #667eea;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .page-link p {
+            color: #666;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        .stats {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3em;
+            font-weight: bold;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎴 Navegación - Tarotap Clonado</h1>
+        <p class="subtitle">Sitio completo con 36 páginas, recursos y 13 idiomas</p>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-number">36</span>
+                <span class="stat-label">Páginas</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">46+</span>
+                <span class="stat-label">Imágenes</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">13</span>
+                <span class="stat-label">Idiomas</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">7.5</span>
+                <span class="stat-label">MB HTML</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🎴 Lecturas de Tarot</h2>
+            <div class="grid">
+                <a href="index.html" class="page-link">
+                    <h3>Página Principal</h3>
+                    <p>Inicio del sitio de tarot con IA</p>
+                </a>
+                <a href="tarot-reading.html" class="page-link">
+                    <h3>Lectura de Tarot IA</h3>
+                    <p>Lectura principal con inteligencia artificial</p>
+                </a>
+                <a href="yes-or-no-tarot.html" class="page-link">
+                    <h3>Tarot Sí o No</h3>
+                    <p>Respuestas rápidas de sí o no</p>
+                </a>
+                <a href="love-tarot.html" class="page-link">
+                    <h3>Tarot del Amor</h3>
+                    <p>Lecturas enfocadas en el amor</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Spreads de Tarot</h2>
+            <div class="grid">
+                <a href="tarot-spread/two-options-spread.html" class="page-link">
+                    <h3>Dos Opciones</h3>
+                    <p>Spread para elegir entre dos opciones</p>
+                </a>
+                <a href="tarot-spread/three-options-spread.html" class="page-link">
+                    <h3>Tres Opciones</h3>
+                    <p>Spread para elegir entre tres opciones</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔮 Fortuna & Utilidades</h2>
+            <div class="grid">
+                <a href="fortune/daily.html" class="page-link">
+                    <h3>Fortuna Diaria</h3>
+                    <p>Tu horóscopo de tarot diario</p>
+                </a>
+                <a href="fortune/yearly.html" class="page-link">
+                    <h3>Fortuna Anual</h3>
+                    <p>Predicciones para el año</p>
+                </a>
+                <a href="fortune/seasonal.html" class="page-link">
+                    <h3>Fortuna Estacional</h3>
+                    <p>Lecturas por temporada</p>
+                </a>
+                <a href="draw-cards.html" class="page-link">
+                    <h3>Sacar Cartas</h3>
+                    <p>Extrae cartas del tarot</p>
+                </a>
+                <a href="oracle-cards.html" class="page-link">
+                    <h3>Cartas Oráculo</h3>
+                    <p>Cartas de oráculo místicas</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📝 Blog & Información</h2>
+            <div class="grid">
+                <a href="blog/ai-tarot-accuracy.html" class="page-link">
+                    <h3>Precisión del Tarot IA</h3>
+                    <p>Artículo sobre la exactitud</p>
+                </a>
+                <a href="blog/chatgpt-tarot-reading-accuracy.html" class="page-link">
+                    <h3>ChatGPT y Tarot</h3>
+                    <p>Precisión de lecturas con ChatGPT</p>
+                </a>
+                <a href="pricing.html" class="page-link">
+                    <h3>Precios <span class="badge">Premium</span></h3>
+                    <p>Planes y suscripciones</p>
+                </a>
+                <a href="affiliate-program.html" class="page-link">
+                    <h3>Programa de Afiliados</h3>
+                    <p>Gana comisiones del 30%</p>
+                </a>
+                <a href="contact.html" class="page-link">
+                    <h3>Contacto</h3>
+                    <p>Ponte en contacto con nosotros</p>
+                </a>
+                <a href="feedback.html" class="page-link">
+                    <h3>Feedback</h3>
+                    <p>Envía tus comentarios</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🌍 Versiones en Otros Idiomas</h2>
+            <div class="grid">
+                <a href="en.html" class="page-link">
+                    <h3>🇬🇧 English</h3>
+                    <p>English version</p>
+                </a>
+                <a href="es.html" class="page-link">
+                    <h3>🇪🇸 Español</h3>
+                    <p>Versión en español</p>
+                </a>
+                <a href="de.html" class="page-link">
+                    <h3>🇩🇪 Deutsch</h3>
+                    <p>Deutsche Version</p>
+                </a>
+                <a href="fr.html" class="page-link">
+                    <h3>🇫🇷 Français</h3>
+                    <p>Version française</p>
+                </a>
+                <a href="it.html" class="page-link">
+                    <h3>🇮🇹 Italiano</h3>
+                    <p>Versione italiana</p>
+                </a>
+                <a href="pt.html" class="page-link">
+                    <h3>🇵🇹 Português</h3>
+                    <p>Versão portuguesa</p>
+                </a>
+                <a href="nl.html" class="page-link">
+                    <h3>🇳🇱 Nederlands</h3>
+                    <p>Nederlandse versie</p>
+                </a>
+                <a href="ru.html" class="page-link">
+                    <h3>🇷🇺 Русский</h3>
+                    <p>Русская версия</p>
+                </a>
+                <a href="ja.html" class="page-link">
+                    <h3>🇯🇵 日本語</h3>
+                    <p>日本語版</p>
+                </a>
+                <a href="zh.html" class="page-link">
+                    <h3>🇨🇳 中文</h3>
+                    <p>中文版</p>
+                </a>
+                <a href="ko.html" class="page-link">
+                    <h3>🇰🇷 한국어</h3>
+                    <p>한국어 버전</p>
+                </a>
+                <a href="th.html" class="page-link">
+                    <h3>🇹🇭 ไทย</h3>
+                    <p>เวอร์ชันภาษาไทย</p>
+                </a>
+                <a href="tr.html" class="page-link">
+                    <h3>🇹🇷 Türkçe</h3>
+                    <p>Türkçe sürüm</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📋 Páginas Legales</h2>
+            <div class="grid">
+                <a href="privacy-policy.html" class="page-link">
+                    <h3>Política de Privacidad</h3>
+                    <p>Protección de datos</p>
+                </a>
+                <a href="terms-of-service.html" class="page-link">
+                    <h3>Términos de Servicio</h3>
+                    <p>Condiciones de uso</p>
+                </a>
+                <a href="refund-policy.html" class="page-link">
+                    <h3>Política de Reembolso</h3>
+                    <p>Devoluciones y reembolsos</p>
+                </a>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px; padding: 30px; background: #f8f9fa; border-radius: 15px; text-align: center;">
+            <p style="color: #666; margin-bottom: 10px;">
+                🚀 Servidor activo en <strong>http://localhost:3004</strong>
+            </p>
+            <p style="color: #999; font-size: 0.9em;">
+                Clon completo de Tarotap.com con todas las páginas, imágenes, estilos y fuentes
+            </p>
+        </div>
+    </div>
+</body>
+</html>

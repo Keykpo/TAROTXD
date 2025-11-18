@@ -1,0 +1,316 @@
+{
+  "totalLinks": 38,
+  "allPaths": [
+    "/",
+    "/tarot-reading",
+    "/yes-or-no-tarot",
+    "/love-tarot",
+    "/pricing",
+    "/fortune/daily",
+    "/draw-cards",
+    "/oracle-cards",
+    "/fortune/yearly",
+    "/tarot-spread/two-options-spread",
+    "/blog/ai-tarot-accuracy",
+    "/blog/chatgpt-tarot-reading-accuracy",
+    "/blog",
+    "/fortune/seasonal",
+    "/chat/luna",
+    "/tarot-spread/three-options-spread",
+    "/feedback",
+    "/contact",
+    "/affiliate-program",
+    "/en",
+    "/zh",
+    "/ja",
+    "/ko",
+    "/es",
+    "/de",
+    "/pt",
+    "/fr",
+    "/it",
+    "/nl",
+    "/ru",
+    "/th",
+    "/tr",
+    "/pl",
+    "/da",
+    "/no",
+    "/privacy-policy",
+    "/terms-of-service",
+    "/refund-policy"
+  ],
+  "categories": {
+    "tarotReading": [
+      {
+        "path": "/tarot-reading",
+        "text": "AI塔羅占卜"
+      },
+      {
+        "path": "/yes-or-no-tarot",
+        "text": "是否塔羅占卜"
+      },
+      {
+        "path": "/love-tarot",
+        "text": "愛情塔羅"
+      },
+      {
+        "path": "/tarot-reading",
+        "text": ""
+      },
+      {
+        "path": "/tarot-reading",
+        "text": "開始塔羅占卜"
+      },
+      {
+        "path": "/yes-or-no-tarot",
+        "text": ""
+      },
+      {
+        "path": "/yes-or-no-tarot",
+        "text": "立即進行是非塔羅占卜"
+      },
+      {
+        "path": "/love-tarot",
+        "text": "塔羅牌占卜愛情"
+      },
+      {
+        "path": "/love-tarot",
+        "text": ""
+      },
+      {
+        "path": "/tarot-spread/two-options-spread",
+        "text": "二選一牌陣"
+      },
+      {
+        "path": "/blog/ai-tarot-accuracy",
+        "text": "AI塔羅（tarotap）準嗎？2025年AI占卜深度分析深入探討AI塔羅牌的準確性與侷限性。本文全"
+      },
+      {
+        "path": "/blog/chatgpt-tarot-reading-accuracy",
+        "text": "ChatGPT 塔羅牌占卜準嗎？揭開 AI 算命的真相與趣味ChatGPT塔羅占卜到底準不準？深度分"
+      },
+      {
+        "path": "/tarot-reading",
+        "text": "AI塔羅占卜"
+      },
+      {
+        "path": "/yes-or-no-tarot",
+        "text": "是否塔羅占卜"
+      },
+      {
+        "path": "/love-tarot",
+        "text": "愛情塔羅"
+      },
+      {
+        "path": "/tarot-spread/two-options-spread",
+        "text": "二擇一牌陣"
+      },
+      {
+        "path": "/tarot-spread/three-options-spread",
+        "text": "三擇一牌陣"
+      }
+    ],
+    "pricing": [
+      {
+        "path": "/pricing",
+        "text": "會員訂閱"
+      }
+    ],
+    "blog": [
+      {
+        "path": "/blog",
+        "text": "學習塔羅牌占卜"
+      },
+      {
+        "path": "/blog",
+        "text": "部落格"
+      }
+    ],
+    "auth": [],
+    "other": [
+      {
+        "path": "/fortune/daily",
+        "text": "檢視每日塔羅運勢"
+      },
+      {
+        "path": "/fortune/daily",
+        "text": ""
+      },
+      {
+        "path": "/draw-cards",
+        "text": ""
+      },
+      {
+        "path": "/draw-cards",
+        "text": "塔羅抽牌"
+      },
+      {
+        "path": "/oracle-cards",
+        "text": "開始神諭卡抽卡"
+      },
+      {
+        "path": "/oracle-cards",
+        "text": ""
+      },
+      {
+        "path": "/fortune/yearly",
+        "text": "查看年度塔羅運勢"
+      },
+      {
+        "path": "/fortune/yearly",
+        "text": "塔羅年運"
+      },
+      {
+        "path": "/fortune/daily",
+        "text": "每日塔羅"
+      },
+      {
+        "path": "/fortune/seasonal",
+        "text": "四季牌陣"
+      },
+      {
+        "path": "/chat/luna",
+        "text": "塔羅療癒"
+      },
+      {
+        "path": "/oracle-cards",
+        "text": "神諭卡"
+      },
+      {
+        "path": "/draw-cards",
+        "text": "塔羅抽牌"
+      },
+      {
+        "path": "/feedback",
+        "text": "意見回饋"
+      },
+      {
+        "path": "/contact",
+        "text": "聯絡我們"
+      },
+      {
+        "path": "/affiliate-program",
+        "text": "聯盟行銷"
+      },
+      {
+        "path": "/en",
+        "text": "English"
+      },
+      {
+        "path": "/zh",
+        "text": "简体中文"
+      },
+      {
+        "path": "/ja",
+        "text": "日本語"
+      },
+      {
+        "path": "/ko",
+        "text": "한국어"
+      },
+      {
+        "path": "/es",
+        "text": "Español"
+      },
+      {
+        "path": "/de",
+        "text": "Deutsch"
+      },
+      {
+        "path": "/pt",
+        "text": "Português"
+      },
+      {
+        "path": "/fr",
+        "text": "Français"
+      },
+      {
+        "path": "/it",
+        "text": "Italiano"
+      },
+      {
+        "path": "/nl",
+        "text": "Nederlands"
+      },
+      {
+        "path": "/ru",
+        "text": "Русский"
+      },
+      {
+        "path": "/th",
+        "text": "ไทย"
+      },
+      {
+        "path": "/tr",
+        "text": "Türkçe"
+      },
+      {
+        "path": "/pl",
+        "text": "Polski"
+      },
+      {
+        "path": "/da",
+        "text": "Dansk"
+      },
+      {
+        "path": "/no",
+        "text": "Norsk"
+      },
+      {
+        "path": "/privacy-policy",
+        "text": "隱私政策"
+      },
+      {
+        "path": "/terms-of-service",
+        "text": "服務條款"
+      },
+      {
+        "path": "/refund-policy",
+        "text": "退款政策"
+      }
+    ]
+  },
+  "mainPagesToClone": [
+    "/tarot-reading",
+    "/yes-or-no-tarot",
+    "/love-tarot",
+    "/tarot-spread/two-options-spread",
+    "/blog/ai-tarot-accuracy",
+    "/blog/chatgpt-tarot-reading-accuracy",
+    "/tarot-spread/three-options-spread",
+    "/pricing",
+    "/fortune/daily",
+    "/draw-cards",
+    "/oracle-cards",
+    "/fortune/yearly",
+    "/fortune/seasonal",
+    "/chat/luna",
+    "/feedback",
+    "/contact",
+    "/affiliate-program",
+    "/en",
+    "/zh",
+    "/ja",
+    "/ko",
+    "/es",
+    "/de",
+    "/pt",
+    "/fr",
+    "/it",
+    "/nl",
+    "/ru",
+    "/th",
+    "/tr",
+    "/pl",
+    "/da",
+    "/no",
+    "/privacy-policy",
+    "/terms-of-service",
+    "/refund-policy"
+  ],
+  "externalDomains": [
+    "www.threads.com",
+    "x.com"
+  ]
+}
