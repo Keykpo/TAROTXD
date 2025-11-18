@@ -17,7 +17,7 @@ const PaymentSystem = {
     packPrice: 1.49,          // Pack de 5 tiradas
     packReadings: 5,
     subscriptionPrice: 5.00,  // Suscripción mensual
-    subscriptionId: 'YOUR_PAYPAL_PLAN_ID' // ID del plan de suscripción de PayPal
+    subscriptionId: 'FVGHY9MV7N8MC' // ID del plan de suscripción de PayPal
   },
 
   // Estado del usuario
