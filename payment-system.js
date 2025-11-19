@@ -343,15 +343,15 @@ const PaymentSystem = {
       <div class="tarot-modal-content pricing-modal">
         <button class="tarot-modal-close" onclick="PaymentSystem.closeAllModals()">&times;</button>
 
-        <h2 style="text-align: center; margin-bottom: 10px;">🎴 Elige tu Plan</h2>
+        <h2 style="text-align: center; margin-bottom: 10px;">🎴 Continúa con tus Lecturas</h2>
         <p style="text-align: center; color: #666; margin-bottom: 30px;">
-          Ya usaste tu lectura gratuita. Elige un plan para continuar:
+          Ya usaste tu lectura gratuita. Compra más lecturas para continuar:
         </p>
 
-        <div class="pricing-grid">
+        <div class="pricing-grid" style="max-width: 400px; margin: 0 auto;">
           <!-- Pack de 5 Lecturas -->
-          <div class="pricing-card">
-            <div class="pricing-badge">POPULAR</div>
+          <div class="pricing-card featured" style="transform: none;">
+            <div class="pricing-badge">MEJOR VALOR</div>
             <h3>Pack de 5 Lecturas</h3>
             <div class="pricing-price">
               <span class="currency">$</span>
@@ -363,27 +363,9 @@ const PaymentSystem = {
               <li>✅ Todos los tipos de lectura</li>
               <li>✅ Sin caducidad</li>
               <li>✅ Historial guardado</li>
+              <li>✅ Usa cuando quieras</li>
             </ul>
             <div id="paypal-pack-button" class="paypal-button-container"></div>
-          </div>
-
-          <!-- Suscripción Mensual -->
-          <div class="pricing-card featured">
-            <div class="pricing-badge premium">MEJOR VALOR</div>
-            <h3>Suscripción Mensual</h3>
-            <div class="pricing-price">
-              <span class="currency">$</span>
-              <span class="amount">5.00</span>
-              <span class="period">/mes</span>
-            </div>
-            <ul class="pricing-features">
-              <li>✅ Lecturas ilimitadas</li>
-              <li>✅ Todos los tipos de lectura</li>
-              <li>✅ Renueva automáticamente</li>
-              <li>✅ Cancela cuando quieras</li>
-              <li>⭐ Soporte prioritario</li>
-            </ul>
-            <div id="paypal-subscription-button" class="paypal-button-container"></div>
           </div>
         </div>
 
@@ -398,10 +380,11 @@ const PaymentSystem = {
 
     modal.style.display = 'flex';
 
-    // Inicializar botones de PayPal después de un pequeño delay
+    // Inicializar botón de PayPal para pack después de un pequeño delay
     setTimeout(() => {
       this.initPackPurchase();
-      this.initSubscription();
+      // Suscripciones desactivadas temporalmente
+      // this.initSubscription();
     }, 300);
   },
 
