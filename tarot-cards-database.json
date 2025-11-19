@@ -1,0 +1,268 @@
+{
+  "majorArcana": [
+    {
+      "id": 0,
+      "name": "The Fool",
+      "nameEs": "El Loco",
+      "upright": "New beginnings, innocence, spontaneity, free spirit",
+      "reversed": "Recklessness, taken advantage of, inconsideration",
+      "uprightEs": "Nuevos comienzos, inocencia, espontaneidad, espíritu libre",
+      "reversedEs": "Imprudencia, aprovechamiento, inconsideración"
+    },
+    {
+      "id": 1,
+      "name": "The Magician",
+      "nameEs": "El Mago",
+      "upright": "Manifestation, resourcefulness, power, inspired action",
+      "reversed": "Manipulation, poor planning, untapped talents",
+      "uprightEs": "Manifestación, ingeniosidad, poder, acción inspirada",
+      "reversedEs": "Manipulación, mala planificación, talentos sin explotar"
+    },
+    {
+      "id": 2,
+      "name": "The High Priestess",
+      "nameEs": "La Sacerdotisa",
+      "upright": "Intuition, sacred knowledge, divine feminine, subconscious mind",
+      "reversed": "Secrets, disconnected from intuition, withdrawal and silence",
+      "uprightEs": "Intuición, conocimiento sagrado, divino femenino, mente subconsciente",
+      "reversedEs": "Secretos, desconexión de la intuición, retraimiento y silencio"
+    },
+    {
+      "id": 3,
+      "name": "The Empress",
+      "nameEs": "La Emperatriz",
+      "upright": "Femininity, beauty, nature, nurturing, abundance",
+      "reversed": "Creative block, dependence on others",
+      "uprightEs": "Feminidad, belleza, naturaleza, crianza, abundancia",
+      "reversedEs": "Bloqueo creativo, dependencia de otros"
+    },
+    {
+      "id": 4,
+      "name": "The Emperor",
+      "nameEs": "El Emperador",
+      "upright": "Authority, establishment, structure, father figure",
+      "reversed": "Domination, excessive control, lack of discipline, inflexibility",
+      "uprightEs": "Autoridad, establecimiento, estructura, figura paterna",
+      "reversedEs": "Dominación, control excesivo, falta de disciplina, inflexibilidad"
+    },
+    {
+      "id": 5,
+      "name": "The Hierophant",
+      "nameEs": "El Hierofante",
+      "upright": "Spiritual wisdom, religious beliefs, conformity, tradition, institutions",
+      "reversed": "Personal beliefs, freedom, challenging the status quo",
+      "uprightEs": "Sabiduría espiritual, creencias religiosas, conformidad, tradición, instituciones",
+      "reversedEs": "Creencias personales, libertad, desafío al status quo"
+    },
+    {
+      "id": 6,
+      "name": "The Lovers",
+      "nameEs": "Los Enamorados",
+      "upright": "Love, harmony, relationships, values alignment, choices",
+      "reversed": "Self-love, disharmony, imbalance, misalignment of values",
+      "uprightEs": "Amor, armonía, relaciones, alineación de valores, elecciones",
+      "reversedEs": "Amor propio, desarmonía, desequilibrio, desalineación de valores"
+    },
+    {
+      "id": 7,
+      "name": "The Chariot",
+      "nameEs": "El Carro",
+      "upright": "Control, willpower, success, action, determination",
+      "reversed": "Self-discipline, opposition, lack of direction",
+      "uprightEs": "Control, fuerza de voluntad, éxito, acción, determinación",
+      "reversedEs": "Autodisciplina, oposición, falta de dirección"
+    },
+    {
+      "id": 8,
+      "name": "Strength",
+      "nameEs": "La Fuerza",
+      "upright": "Strength, courage, persuasion, influence, compassion",
+      "reversed": "Inner strength, self-doubt, low energy, raw emotion",
+      "uprightEs": "Fuerza, coraje, persuasión, influencia, compasión",
+      "reversedEs": "Fuerza interior, duda de sí mismo, baja energía, emoción cruda"
+    },
+    {
+      "id": 9,
+      "name": "The Hermit",
+      "nameEs": "El Ermitaño",
+      "upright": "Soul searching, introspection, being alone, inner guidance",
+      "reversed": "Isolation, loneliness, withdrawal",
+      "uprightEs": "Búsqueda del alma, introspección, estar solo, guía interior",
+      "reversedEs": "Aislamiento, soledad, retraimiento"
+    },
+    {
+      "id": 10,
+      "name": "Wheel of Fortune",
+      "nameEs": "La Rueda de la Fortuna",
+      "upright": "Good luck, karma, life cycles, destiny, a turning point",
+      "reversed": "Bad luck, resistance to change, breaking cycles",
+      "uprightEs": "Buena suerte, karma, ciclos de vida, destino, punto de inflexión",
+      "reversedEs": "Mala suerte, resistencia al cambio, romper ciclos"
+    },
+    {
+      "id": 11,
+      "name": "Justice",
+      "nameEs": "La Justicia",
+      "upright": "Justice, fairness, truth, cause and effect, law",
+      "reversed": "Unfairness, lack of accountability, dishonesty",
+      "uprightEs": "Justicia, equidad, verdad, causa y efecto, ley",
+      "reversedEs": "Injusticia, falta de responsabilidad, deshonestidad"
+    },
+    {
+      "id": 12,
+      "name": "The Hanged Man",
+      "nameEs": "El Colgado",
+      "upright": "Pause, surrender, letting go, new perspectives",
+      "reversed": "Delays, resistance, stalling, indecision",
+      "uprightEs": "Pausa, rendición, dejar ir, nuevas perspectivas",
+      "reversedEs": "Retrasos, resistencia, estancamiento, indecisión"
+    },
+    {
+      "id": 13,
+      "name": "Death",
+      "nameEs": "La Muerte",
+      "upright": "Endings, change, transformation, transition",
+      "reversed": "Resistance to change, personal transformation, inner purging",
+      "uprightEs": "Finales, cambio, transformación, transición",
+      "reversedEs": "Resistencia al cambio, transformación personal, purga interior"
+    },
+    {
+      "id": 14,
+      "name": "Temperance",
+      "nameEs": "La Templanza",
+      "upright": "Balance, moderation, patience, purpose",
+      "reversed": "Imbalance, excess, self-healing, re-alignment",
+      "uprightEs": "Balance, moderación, paciencia, propósito",
+      "reversedEs": "Desequilibrio, exceso, autocuración, realineación"
+    },
+    {
+      "id": 15,
+      "name": "The Devil",
+      "nameEs": "El Diablo",
+      "upright": "Shadow self, attachment, addiction, restriction, sexuality",
+      "reversed": "Releasing limiting beliefs, exploring dark thoughts, detachment",
+      "uprightEs": "Yo sombra, apego, adicción, restricción, sexualidad",
+      "reversedEs": "Liberar creencias limitantes, explorar pensamientos oscuros, desapego"
+    },
+    {
+      "id": 16,
+      "name": "The Tower",
+      "nameEs": "La Torre",
+      "upright": "Sudden change, upheaval, chaos, revelation, awakening",
+      "reversed": "Personal transformation, fear of change, averting disaster",
+      "uprightEs": "Cambio repentino, trastorno, caos, revelación, despertar",
+      "reversedEs": "Transformación personal, miedo al cambio, evitar el desastre"
+    },
+    {
+      "id": 17,
+      "name": "The Star",
+      "nameEs": "La Estrella",
+      "upright": "Hope, faith, purpose, renewal, spirituality",
+      "reversed": "Lack of faith, despair, self-trust, disconnection",
+      "uprightEs": "Esperanza, fe, propósito, renovación, espiritualidad",
+      "reversedEs": "Falta de fe, desesperación, confianza en uno mismo, desconexión"
+    },
+    {
+      "id": 18,
+      "name": "The Moon",
+      "nameEs": "La Luna",
+      "upright": "Illusion, fear, anxiety, subconscious, intuition",
+      "reversed": "Release of fear, repressed emotion, inner confusion",
+      "uprightEs": "Ilusión, miedo, ansiedad, subconsciente, intuición",
+      "reversedEs": "Liberación del miedo, emoción reprimida, confusión interior"
+    },
+    {
+      "id": 19,
+      "name": "The Sun",
+      "nameEs": "El Sol",
+      "upright": "Positivity, fun, warmth, success, vitality",
+      "reversed": "Inner child, feeling down, overly optimistic",
+      "uprightEs": "Positividad, diversión, calidez, éxito, vitalidad",
+      "reversedEs": "Niño interior, sentirse deprimido, demasiado optimista"
+    },
+    {
+      "id": 20,
+      "name": "Judgement",
+      "nameEs": "El Juicio",
+      "upright": "Judgement, rebirth, inner calling, absolution",
+      "reversed": "Self-doubt, inner critic, ignoring the call",
+      "uprightEs": "Juicio, renacimiento, llamado interior, absolución",
+      "reversedEs": "Duda de sí mismo, crítico interior, ignorar el llamado"
+    },
+    {
+      "id": 21,
+      "name": "The World",
+      "nameEs": "El Mundo",
+      "upright": "Completion, integration, accomplishment, travel",
+      "reversed": "Seeking personal closure, short-cuts, delays",
+      "uprightEs": "Completación, integración, logro, viaje",
+      "reversedEs": "Búsqueda de cierre personal, atajos, retrasos"
+    }
+  ],
+  "minorArcana": {
+    "wands": [
+      {"name": "Ace of Wands", "nameEs": "As de Bastos", "upright": "Inspiration, new opportunities, growth", "reversed": "Delays, lack of direction", "uprightEs": "Inspiración, nuevas oportunidades, crecimiento", "reversedEs": "Retrasos, falta de dirección"},
+      {"name": "Two of Wands", "nameEs": "Dos de Bastos", "upright": "Planning, making decisions, discovery", "reversed": "Fear of unknown, lack of planning", "uprightEs": "Planificación, toma de decisiones, descubrimiento", "reversedEs": "Miedo a lo desconocido, falta de planificación"},
+      {"name": "Three of Wands", "nameEs": "Tres de Bastos", "upright": "Expansion, foresight, overseas opportunities", "reversed": "Playing it safe, lack of foresight", "uprightEs": "Expansión, previsión, oportunidades en el extranjero", "reversedEs": "Jugar seguro, falta de previsión"},
+      {"name": "Four of Wands", "nameEs": "Cuatro de Bastos", "upright": "Celebration, harmony, marriage, home", "reversed": "Personal celebration, inner harmony", "uprightEs": "Celebración, armonía, matrimonio, hogar", "reversedEs": "Celebración personal, armonía interior"},
+      {"name": "Five of Wands", "nameEs": "Cinco de Bastos", "upright": "Conflict, competition, tension", "reversed": "Inner conflict, avoiding conflict", "uprightEs": "Conflicto, competencia, tensión", "reversedEs": "Conflicto interior, evitar conflictos"},
+      {"name": "Six of Wands", "nameEs": "Seis de Bastos", "upright": "Success, recognition, victory", "reversed": "Private achievement, self-doubt", "uprightEs": "Éxito, reconocimiento, victoria", "reversedEs": "Logro privado, duda de sí mismo"},
+      {"name": "Seven of Wands", "nameEs": "Siete de Bastos", "upright": "Challenge, competition, perseverance", "reversed": "Exhaustion, giving up", "uprightEs": "Desafío, competencia, perseverancia", "reversedEs": "Agotamiento, rendirse"},
+      {"name": "Eight of Wands", "nameEs": "Ocho de Bastos", "upright": "Movement, fast paced change, action", "reversed": "Delays, frustration, resisting change", "uprightEs": "Movimiento, cambio acelerado, acción", "reversedEs": "Retrasos, frustración, resistencia al cambio"},
+      {"name": "Nine of Wands", "nameEs": "Nueve de Bastos", "upright": "Resilience, courage, persistence", "reversed": "Inner resources, struggle, overwhelm", "uprightEs": "Resiliencia, coraje, persistencia", "reversedEs": "Recursos internos, lucha, abrumado"},
+      {"name": "Ten of Wands", "nameEs": "Diez de Bastos", "upright": "Burden, responsibility, hard work", "reversed": "Doing it all, responsibility", "uprightEs": "Carga, responsabilidad, trabajo duro", "reversedEs": "Hacerlo todo, responsabilidad"},
+      {"name": "Page of Wands", "nameEs": "Sota de Bastos", "upright": "Exploration, excitement, freedom", "reversed": "Lack of direction, procrastination", "uprightEs": "Exploración, emoción, libertad", "reversedEs": "Falta de dirección, procrastinación"},
+      {"name": "Knight of Wands", "nameEs": "Caballero de Bastos", "upright": "Energy, passion, adventure", "reversed": "Haste, scattered energy, delays", "uprightEs": "Energía, pasión, aventura", "reversedEs": "Prisa, energía dispersa, retrasos"},
+      {"name": "Queen of Wands", "nameEs": "Reina de Bastos", "upright": "Courage, determination, joy", "reversed": "Selfishness, jealousy", "uprightEs": "Coraje, determinación, alegría", "reversedEs": "Egoísmo, celos"},
+      {"name": "King of Wands", "nameEs": "Rey de Bastos", "upright": "Natural leader, vision, entrepreneur", "reversed": "Impulsiveness, high expectations", "uprightEs": "Líder natural, visión, emprendedor", "reversedEs": "Impulsividad, altas expectativas"}
+    ],
+    "cups": [
+      {"name": "Ace of Cups", "nameEs": "As de Copas", "upright": "Love, new relationships, emotional awakening", "reversed": "Emotional loss, blocked creativity", "uprightEs": "Amor, nuevas relaciones, despertar emocional", "reversedEs": "Pérdida emocional, creatividad bloqueada"},
+      {"name": "Two of Cups", "nameEs": "Dos de Copas", "upright": "Unified love, partnership, connection", "reversed": "Imbalance, broken communication", "uprightEs": "Amor unificado, asociación, conexión", "reversedEs": "Desequilibrio, comunicación rota"},
+      {"name": "Three of Cups", "nameEs": "Tres de Copas", "upright": "Celebration, friendship, creativity", "reversed": "Independence, alone time", "uprightEs": "Celebración, amistad, creatividad", "reversedEs": "Independencia, tiempo a solas"},
+      {"name": "Four of Cups", "nameEs": "Cuatro de Copas", "upright": "Meditation, contemplation, apathy", "reversed": "Awareness, acceptance", "uprightEs": "Meditación, contemplación, apatía", "reversedEs": "Conciencia, aceptación"},
+      {"name": "Five of Cups", "nameEs": "Cinco de Copas", "upright": "Loss, grief, disappointment", "reversed": "Personal setbacks, self-forgiveness", "uprightEs": "Pérdida, dolor, decepción", "reversedEs": "Contratiempos personales, auto-perdón"},
+      {"name": "Six of Cups", "nameEs": "Seis de Copas", "upright": "Revisiting the past, childhood memories", "reversed": "Living in the past, forgiveness", "uprightEs": "Revisitar el pasado, recuerdos de la infancia", "reversedEs": "Vivir en el pasado, perdón"},
+      {"name": "Seven of Cups", "nameEs": "Siete de Copas", "upright": "Opportunities, choices, wishful thinking", "reversed": "Alignment, personal values", "uprightEs": "Oportunidades, elecciones, ilusiones", "reversedEs": "Alineación, valores personales"},
+      {"name": "Eight of Cups", "nameEs": "Ocho de Copas", "upright": "Disappointment, abandonment, withdrawal", "reversed": "Trying one more time, indecision", "uprightEs": "Decepción, abandono, retraimiento", "reversedEs": "Intentar una vez más, indecisión"},
+      {"name": "Nine of Cups", "nameEs": "Nueve de Copas", "upright": "Contentment, satisfaction, gratitude", "reversed": "Inner happiness, materialism", "uprightEs": "Contentamiento, satisfacción, gratitud", "reversedEs": "Felicidad interior, materialismo"},
+      {"name": "Ten of Cups", "nameEs": "Diez de Copas", "upright": "Divine love, blissful relationships", "reversed": "Disconnection, misaligned values", "uprightEs": "Amor divino, relaciones felices", "reversedEs": "Desconexión, valores desalineados"},
+      {"name": "Page of Cups", "nameEs": "Sota de Copas", "upright": "Creative opportunities, curiosity", "reversed": "New ideas, doubting intuition", "uprightEs": "Oportunidades creativas, curiosidad", "reversedEs": "Nuevas ideas, dudar de la intuición"},
+      {"name": "Knight of Cups", "nameEs": "Caballero de Copas", "upright": "Creativity, romance, charm", "reversed": "Overactive imagination, unrealistic", "uprightEs": "Creatividad, romance, encanto", "reversedEs": "Imaginación hiperactiva, irreal"},
+      {"name": "Queen of Cups", "nameEs": "Reina de Copas", "upright": "Compassion, calm, comfort", "reversed": "Martyrdom, insecurity", "uprightEs": "Compasión, calma, confort", "reversedEs": "Martirio, inseguridad"},
+      {"name": "King of Cups", "nameEs": "Rey de Copas", "upright": "Emotionally balanced, compassionate", "reversed": "Self-compassion, moodiness", "uprightEs": "Equilibrado emocionalmente, compasivo", "reversedEs": "Auto-compasión, mal humor"}
+    ],
+    "swords": [
+      {"name": "Ace of Swords", "nameEs": "As de Espadas", "upright": "Breakthrough, clarity, sharp mind", "reversed": "Confusion, miscommunication", "uprightEs": "Avance, claridad, mente aguda", "reversedEs": "Confusión, falta de comunicación"},
+      {"name": "Two of Swords", "nameEs": "Dos de Espadas", "upright": "Difficult decisions, weighing options", "reversed": "Indecision, confusion", "uprightEs": "Decisiones difíciles, sopesar opciones", "reversedEs": "Indecisión, confusión"},
+      {"name": "Three of Swords", "nameEs": "Tres de Espadas", "upright": "Heartbreak, emotional pain, sorrow", "reversed": "Negative self-talk, releasing pain", "uprightEs": "Desamor, dolor emocional, tristeza", "reversedEs": "Diálogo interno negativo, liberar el dolor"},
+      {"name": "Four of Swords", "nameEs": "Cuatro de Espadas", "upright": "Rest, restoration, contemplation", "reversed": "Exhaustion, burnout, stagnation", "uprightEs": "Descanso, restauración, contemplación", "reversedEs": "Agotamiento, desgaste, estancamiento"},
+      {"name": "Five of Swords", "nameEs": "Cinco de Espadas", "upright": "Conflict, disagreements, competition", "reversed": "Reconciliation, making amends", "uprightEs": "Conflicto, desacuerdos, competencia", "reversedEs": "Reconciliación, hacer las paces"},
+      {"name": "Six of Swords", "nameEs": "Seis de Espadas", "upright": "Transition, change, rite of passage", "reversed": "Resistance to change, unfinished business", "uprightEs": "Transición, cambio, rito de paso", "reversedEs": "Resistencia al cambio, asuntos pendientes"},
+      {"name": "Seven of Swords", "nameEs": "Siete de Espadas", "upright": "Betrayal, deception, getting away", "reversed": "Imposter syndrome, self-deceit", "uprightEs": "Traición, engaño, escaparse", "reversedEs": "Síndrome del impostor, auto-engaño"},
+      {"name": "Eight of Swords", "nameEs": "Ocho de Espadas", "upright": "Negative thoughts, self-imposed restriction", "reversed": "Self-limiting beliefs, inner critic", "uprightEs": "Pensamientos negativos, restricción autoimpuesta", "reversedEs": "Creencias autolimitantes, crítico interior"},
+      {"name": "Nine of Swords", "nameEs": "Nueve de Espadas", "upright": "Anxiety, worry, fear, nightmares", "reversed": "Inner turmoil, deep-seated fears", "uprightEs": "Ansiedad, preocupación, miedo, pesadillas", "reversedEs": "Turbulencia interior, miedos arraigados"},
+      {"name": "Ten of Swords", "nameEs": "Diez de Espadas", "upright": "Painful endings, deep wounds, betrayal", "reversed": "Recovery, regeneration, resisting end", "uprightEs": "Finales dolorosos, heridas profundas, traición", "reversedEs": "Recuperación, regeneración, resistir el final"},
+      {"name": "Page of Swords", "nameEs": "Sota de Espadas", "upright": "New ideas, curiosity, thirst for knowledge", "reversed": "Self-expression, all talk", "uprightEs": "Nuevas ideas, curiosidad, sed de conocimiento", "reversedEs": "Autoexpresión, todo palabras"},
+      {"name": "Knight of Swords", "nameEs": "Caballero de Espadas", "upright": "Ambitious, action-oriented, driven", "reversed": "Restless, unfocused, impulsive", "uprightEs": "Ambicioso, orientado a la acción, motivado", "reversedEs": "Inquieto, desenfocado, impulsivo"},
+      {"name": "Queen of Swords", "nameEs": "Reina de Espadas", "upright": "Independent, unbiased judgement, clear boundaries", "reversed": "Overly-emotional, easily influenced", "uprightEs": "Independiente, juicio imparcial, límites claros", "reversedEs": "Demasiado emocional, fácilmente influenciable"},
+      {"name": "King of Swords", "nameEs": "Rey de Espadas", "upright": "Mental clarity, intellectual power, authority", "reversed": "Quiet power, inner truth", "uprightEs": "Claridad mental, poder intelectual, autoridad", "reversedEs": "Poder silencioso, verdad interior"}
+    ],
+    "pentacles": [
+      {"name": "Ace of Pentacles", "nameEs": "As de Oros", "upright": "Opportunity, prosperity, new venture", "reversed": "Lost opportunity, missed chance", "uprightEs": "Oportunidad, prosperidad, nueva empresa", "reversedEs": "Oportunidad perdida, oportunidad perdida"},
+      {"name": "Two of Pentacles", "nameEs": "Dos de Oros", "upright": "Multiple priorities, time management", "reversed": "Over-committed, disorganization", "uprightEs": "Múltiples prioridades, gestión del tiempo", "reversedEs": "Sobre-comprometido, desorganización"},
+      {"name": "Three of Pentacles", "nameEs": "Tres de Oros", "upright": "Teamwork, collaboration, learning", "reversed": "Disharmony, misalignment, working alone", "uprightEs": "Trabajo en equipo, colaboración, aprendizaje", "reversedEs": "Desarmonía, desalineación, trabajar solo"},
+      {"name": "Four of Pentacles", "nameEs": "Cuatro de Oros", "upright": "Saving money, security, conservatism", "reversed": "Over-spending, greed, self-protection", "uprightEs": "Ahorrar dinero, seguridad, conservadurismo", "reversedEs": "Gastar demasiado, avaricia, autoprotección"},
+      {"name": "Five of Pentacles", "nameEs": "Cinco de Oros", "upright": "Financial loss, poverty, lack mindset", "reversed": "Recovery from financial loss, spiritual poverty", "uprightEs": "Pérdida financiera, pobreza, mentalidad de escasez", "reversedEs": "Recuperación de pérdida financiera, pobreza espiritual"},
+      {"name": "Six of Pentacles", "nameEs": "Seis de Oros", "upright": "Giving, receiving, sharing wealth", "reversed": "Self-care, unpaid debts, one-sided charity", "uprightEs": "Dar, recibir, compartir riqueza", "reversedEs": "Autocuidado, deudas no pagadas, caridad unilateral"},
+      {"name": "Seven of Pentacles", "nameEs": "Siete de Oros", "upright": "Long-term view, sustainable results", "reversed": "Lack of long-term vision, limited success", "uprightEs": "Visión a largo plazo, resultados sostenibles", "reversedEs": "Falta de visión a largo plazo, éxito limitado"},
+      {"name": "Eight of Pentacles", "nameEs": "Ocho de Oros", "upright": "Apprenticeship, repetitive tasks, mastery", "reversed": "Self-development, perfectionism", "uprightEs": "Aprendizaje, tareas repetitivas, maestría", "reversedEs": "Autodesarrollo, perfeccionismo"},
+      {"name": "Nine of Pentacles", "nameEs": "Nueve de Oros", "upright": "Abundance, luxury, self-sufficiency", "reversed": "Over-investment in work, hustling", "uprightEs": "Abundancia, lujo, autosuficiencia", "reversedEs": "Sobre-inversión en el trabajo, agitación"},
+      {"name": "Ten of Pentacles", "nameEs": "Diez de Oros", "upright": "Wealth, financial security, family", "reversed": "Financial failure, loneliness", "uprightEs": "Riqueza, seguridad financiera, familia", "reversedEs": "Fracaso financiero, soledad"},
+      {"name": "Page of Pentacles", "nameEs": "Sota de Oros", "upright": "Financial opportunity, skill development", "reversed": "Lack of progress, procrastination", "uprightEs": "Oportunidad financiera, desarrollo de habilidades", "reversedEs": "Falta de progreso, procrastinación"},
+      {"name": "Knight of Pentacles", "nameEs": "Caballero de Oros", "upright": "Hard work, productivity, routine", "reversed": "Self-discipline, boredom, feeling stuck", "uprightEs": "Trabajo duro, productividad, rutina", "reversedEs": "Autodisciplina, aburrimiento, sentirse atascado"},
+      {"name": "Queen of Pentacles", "nameEs": "Reina de Oros", "upright": "Nurturing, practical, providing financially", "reversed": "Financial independence, self-care", "uprightEs": "Nutritivo, práctico, proporcionar financieramente", "reversedEs": "Independencia financiera, autocuidado"},
+      {"name": "King of Pentacles", "nameEs": "Rey de Oros", "upright": "Wealth, business, leadership, security", "reversed": "Financially inept, obsessed with wealth", "uprightEs": "Riqueza, negocios, liderazgo, seguridad", "reversedEs": "Financieramente inepto, obsesionado con la riqueza"}
+    ]
+  }
+}
