@@ -14,7 +14,7 @@ const TarotSystem = {
   // Configuración de idioma
   currentLanguage: 'en',
 
-  // Historial de lecturas
+  // Historial de readings
   readingHistory: [],
 
   // ============================================================================
@@ -22,7 +22,7 @@ const TarotSystem = {
   // ============================================================================
 
   async init() {
-    console.log('🎴 Inicializando Sistema de Tarot...');
+    console.log('🎴 Initializing Tarot System...');
 
     // Cargar base de datos de cartas
     await this.loadCardsDatabase();
@@ -44,7 +44,7 @@ const TarotSystem = {
     // Mostrar display de créditos
     this.showCreditsDisplay();
 
-    console.log('✅ Sistema de Tarot inicializado correctamente');
+    console.log('✅ Tarot System initialized successfully');
   },
 
   // ============================================================================
@@ -105,7 +105,7 @@ const TarotSystem = {
 
     display.innerHTML = `
       <span class="credits-icon">🎴</span>
-      <span>Lecturas:</span>
+      <span>Readings:</span>
       <span class="credits-count">${remaining}</span>
     `;
   },
@@ -115,7 +115,7 @@ const TarotSystem = {
     try {
       const response = await fetch('/tarot-cards-database.json');
       this.cardsDatabase = await response.json();
-      console.log('✅ Base de datos de cartas cargada:',
+      console.log('✅ Tarot cards database loaded:',
                   this.cardsDatabase.majorArcana.length + ' arcanos mayores, ' +
                   'arcanos menores completos');
     } catch (error) {
@@ -220,11 +220,11 @@ const TarotSystem = {
   performTarotReading(question = '') {
     // Verificar créditos primero
     if (!this.checkCreditsBeforeReading()) {
-      console.log('⛔ Lectura cancelada: sin créditos');
+      console.log('⛔ Reading cancelled: no credits');
       return null;
     }
 
-    console.log('🔮 Realizando lectura de tarot...');
+    console.log('🔮 Performing tarot reading...');
 
     // Tirada de 3 cartas: Pasado, Presente, Futuro
     const cards = this.getRandomCards(3, true);
@@ -263,17 +263,17 @@ const TarotSystem = {
       });
     });
 
-    console.log('✅ Tarot Sí/No inicializado');
+    console.log('✅ Yes/No Tarot initialized');
   },
 
   performYesNoReading(question = '') {
     // Verificar créditos primero
     if (!this.checkCreditsBeforeReading()) {
-      console.log('⛔ Lectura cancelada: sin créditos');
+      console.log('⛔ Reading cancelled: no credits');
       return null;
     }
 
-    console.log('🔮 Realizando lectura Sí/No...');
+    console.log('🔮 Performing Yes/No reading...');
 
     const card = this.getRandomCard(false); // Solo arcanos mayores
 
@@ -336,17 +336,17 @@ const TarotSystem = {
       });
     });
 
-    console.log('❤️ Tarot del Amor inicializado');
+    console.log('❤️ Love Tarot initialized');
   },
 
   performLoveReading(names = { person1: 'You', person2: 'Them' }) {
     // Verificar créditos primero
     if (!this.checkCreditsBeforeReading()) {
-      console.log('⛔ Lectura cancelada: sin créditos');
+      console.log('⛔ Reading cancelled: no credits');
       return null;
     }
 
-    console.log('💕 Realizando lectura de amor...');
+    console.log('💕 Performing love reading...');
 
     // Tirada de amor de 5 cartas
     const cards = this.getRandomCards(5, true);
@@ -394,7 +394,7 @@ const TarotSystem = {
   },
 
   getDailyFortune() {
-    console.log('🌟 Generando fortuna diaria...');
+    console.log('🌟 Generating daily fortune...');
 
     // Usar la fecha como seed para que sea consistente durante el día
     const today = new Date().toDateString();
@@ -464,17 +464,17 @@ const TarotSystem = {
       });
     });
 
-    console.log('🃏 Sistema de sacar cartas inicializado');
+    console.log('🃏 Draw cards system initialized');
   },
 
   drawCards(count = 1) {
     // Verificar créditos primero
     if (!this.checkCreditsBeforeReading()) {
-      console.log('⛔ Lectura cancelada: sin créditos');
+      console.log('⛔ Reading cancelled: no credits');
       return null;
     }
 
-    console.log(`🃏 Sacando ${count} carta(s)...`);
+    console.log(`🃏 Drawing ${count} card(s)...`);
 
     const cards = this.getRandomCards(count, true);
     this.displayDrawnCards(cards);
@@ -505,14 +505,14 @@ const TarotSystem = {
       });
     }
 
-    console.log('📝 Formularios inicializados');
+    console.log('📝 Forms initialized');
   },
 
   handleContactForm(form) {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData);
 
-    console.log('📧 Enviando formulario de contacto:', data);
+    console.log('📧 Sending contact form:', data);
 
     // Simular envío
     this.showNotification('✅ Message sent successfully! We\'ll get back to you soon.', 'success');
@@ -532,7 +532,7 @@ const TarotSystem = {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData);
 
-    console.log('💬 Enviando feedback:', data);
+    console.log('💬 Sending feedback:', data);
 
     this.showNotification('✅ Thank you for your feedback!', 'success');
 
@@ -727,7 +727,7 @@ const TarotSystem = {
     const history = JSON.parse(localStorage.getItem('tarotHistory') || '[]');
     history.push(reading);
 
-    // Mantener solo las últimas 50 lecturas
+    // Mantener solo las últimas 50 readings
     if (history.length > 50) {
       history.shift();
     }
@@ -739,7 +739,7 @@ const TarotSystem = {
   loadHistory() {
     const history = JSON.parse(localStorage.getItem('tarotHistory') || '[]');
     this.readingHistory = history;
-    console.log(`📚 Historial cargado: ${history.length} lecturas`);
+    console.log(`📚 History loaded: ${history.length} readings`);
   },
 
   getHistory() {
@@ -749,7 +749,7 @@ const TarotSystem = {
   clearHistory() {
     this.readingHistory = [];
     localStorage.removeItem('tarotHistory');
-    console.log('🗑️ Historial limpiado');
+    console.log('🗑️ History cleared');
   },
 
   // ============================================================================
@@ -788,4 +788,4 @@ if (document.readyState === 'loading') {
 // Exponer globalmente para uso en consola
 window.TarotSystem = TarotSystem;
 
-console.log('🎴 Módulo de Tarot cargado. Use window.TarotSystem para acceder a las funcionalidades.');
+console.log('🎴 Tarot Module loaded. Use window.TarotSystem to access functionalities.');

@@ -34,7 +34,7 @@ const PaymentSystem = {
   // ============================================================================
 
   async init() {
-    console.log('💳 Inicializando Sistema de Pagos PayPal...');
+    console.log('💳 Initializing PayPal Payment System...');
 
     // Cargar estado del usuario
     this.loadUserState();
@@ -45,15 +45,15 @@ const PaymentSystem = {
     // Verificar estado de suscripción
     this.checkSubscriptionStatus();
 
-    console.log('✅ Sistema de pagos inicializado');
-    console.log('💰 Créditos disponibles:', this.getRemainingReadings());
+    console.log('✅ Payment system initialized');
+    console.log('💰 Available credits:', this.getRemainingReadings());
   },
 
   // Cargar PayPal SDK dinámicamente
   async loadPayPalSDK() {
     // Si ya está cargado, no hacer nada
     if (window.paypal) {
-      console.log('✅ PayPal SDK ya cargado');
+      console.log('✅ PayPal SDK already loaded');
       return;
     }
 
@@ -63,7 +63,7 @@ const PaymentSystem = {
       script.async = true;
 
       script.onload = () => {
-        console.log('✅ PayPal SDK cargado correctamente');
+        console.log('✅ PayPal SDK loaded successfully');
         resolve();
       };
 
@@ -112,7 +112,7 @@ const PaymentSystem = {
       this.userState.remainingReadings--;
       this.userState.totalReadings++;
       this.saveUserState();
-      console.log(`📊 Lecturas restantes: ${this.userState.remainingReadings}`);
+      console.log(`📊 Remaining readings: ${this.userState.remainingReadings}`);
       return true;
     }
 
@@ -140,7 +140,7 @@ const PaymentSystem = {
   // Verificar estado de suscripción
   checkSubscriptionStatus() {
     if (this.userState.isSubscribed && !this.isSubscriptionActive()) {
-      console.log('⚠️ Suscripción expirada');
+      console.log('⚠️ Subscription expired');
       this.userState.isSubscribed = false;
       this.userState.subscriptionExpiry = null;
       this.saveUserState();
@@ -179,7 +179,7 @@ const PaymentSystem = {
         // Cuando se aprueba el pago
         onApprove: async (data, actions) => {
           const order = await actions.order.capture();
-          console.log('✅ Pago aprobado:', order);
+          console.log('✅ Payment approved:', order);
 
           // Agregar créditos
           this.addReadings(this.pricing.packReadings);
@@ -217,7 +217,7 @@ const PaymentSystem = {
 
         // Si se cancela
         onCancel: () => {
-          console.log('⚠️ Pago cancelado por el usuario');
+          console.log('⚠️ Payment cancelled by user');
           this.showInfoMessage(
             'ℹ️ Pago Cancelado',
             'Has cancelado el proceso de pago.'
@@ -225,7 +225,7 @@ const PaymentSystem = {
         }
       }).render(`#${containerId}`);
 
-      console.log('✅ Botón de PayPal (pack) renderizado');
+      console.log('✅ PayPal button (pack) rendered');
     } catch (error) {
       console.error('❌ Error inicializando botón de PayPal:', error);
     }
@@ -263,7 +263,7 @@ const PaymentSystem = {
 
         // Cuando se aprueba
         onApprove: async (data, actions) => {
-          console.log('✅ Suscripción aprobada:', data);
+          console.log('✅ Subscription approved:', data);
 
           // Activar suscripción
           this.userState.isSubscribed = true;
@@ -302,7 +302,7 @@ const PaymentSystem = {
 
         // Si se cancela
         onCancel: () => {
-          console.log('⚠️ Suscripción cancelada por el usuario');
+          console.log('⚠️ Subscription cancelled by user');
           this.showInfoMessage(
             'ℹ️ Suscripción Cancelada',
             'Has cancelado el proceso de suscripción.'
@@ -310,7 +310,7 @@ const PaymentSystem = {
         }
       }).render(`#${containerId}`);
 
-      console.log('✅ Botón de PayPal (suscripción) renderizado');
+      console.log('✅ PayPal button (subscription) rendered');
     } catch (error) {
       console.error('❌ Error inicializando botón de suscripción:', error);
     }
@@ -343,27 +343,27 @@ const PaymentSystem = {
       <div class="tarot-modal-content pricing-modal">
         <button class="tarot-modal-close" onclick="PaymentSystem.closeAllModals()">&times;</button>
 
-        <h2 style="text-align: center; margin-bottom: 10px;">🎴 Continúa con tus Lecturas</h2>
+        <h2 style="text-align: center; margin-bottom: 10px;">🎴 Continue Your Readings</h2>
         <p style="text-align: center; color: #666; margin-bottom: 30px;">
-          Ya usaste tu lectura gratuita. Compra más lecturas para continuar:
+          You've used your free reading. Purchase more readings to continue:
         </p>
 
         <div class="pricing-grid" style="max-width: 400px; margin: 0 auto;">
-          <!-- Pack de 5 Lecturas -->
+          <!-- Pack of 5 Readings -->
           <div class="pricing-card featured" style="transform: none;">
-            <div class="pricing-badge">MEJOR VALOR</div>
-            <h3>Pack de 5 Lecturas</h3>
+            <div class="pricing-badge">BEST VALUE</div>
+            <h3>Pack of 5 Readings</h3>
             <div class="pricing-price">
               <span class="currency">$</span>
               <span class="amount">1.49</span>
               <span class="period">USD</span>
             </div>
             <ul class="pricing-features">
-              <li>✅ 5 lecturas de tarot</li>
-              <li>✅ Todos los tipos de lectura</li>
-              <li>✅ Sin caducidad</li>
-              <li>✅ Historial guardado</li>
-              <li>✅ Usa cuando quieras</li>
+              <li>✅ 5 tarot readings</li>
+              <li>✅ All reading types</li>
+              <li>✅ Never expires</li>
+              <li>✅ History saved</li>
+              <li>✅ Use anytime</li>
             </ul>
             <div id="paypal-pack-button" class="paypal-button-container"></div>
           </div>
@@ -371,8 +371,8 @@ const PaymentSystem = {
 
         <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e0e0e0;">
           <p style="color: #999; font-size: 14px;">
-            🔒 Pago seguro procesado por PayPal<br>
-            💳 No se requiere registro, solo PayPal
+            🔒 Secure payment processed by PayPal<br>
+            💳 No registration required, just PayPal
           </p>
         </div>
       </div>
@@ -450,14 +450,14 @@ const PaymentSystem = {
     const saved = localStorage.getItem('tarotPaymentState');
     if (saved) {
       this.userState = { ...this.userState, ...JSON.parse(saved) };
-      console.log('📂 Estado de pago cargado:', this.userState);
+      console.log('📂 Payment state loaded:', this.userState);
     }
   },
 
   // Guardar estado del usuario
   saveUserState() {
     localStorage.setItem('tarotPaymentState', JSON.stringify(this.userState));
-    console.log('💾 Estado de pago guardado');
+    console.log('💾 Payment state saved');
   },
 
   // Resetear estado (para pruebas)
@@ -470,7 +470,7 @@ const PaymentSystem = {
       purchaseHistory: []
     };
     this.saveUserState();
-    console.log('🔄 Estado de pago reseteado');
+    console.log('🔄 Payment state reset');
   },
 
   // ============================================================================
